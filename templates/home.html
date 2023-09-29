@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Welcome to the Chat Room</h1>
+        <p>Sign in to start chatting with others.</p>
+        <button class="sign-in-button"><a href="{% url 'signIn' %}">Sign In</a></button>
+        <button class="sign-out-button"><a href="{% url 'signup' %}">Sign Up</a></button>
+    </div>
+</body>
+</html>
